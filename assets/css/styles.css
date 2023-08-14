@@ -48,14 +48,16 @@
               padding: 20px;
           }
 
-
-          .dialogosaudiovisuais p {
+          .card {
+            padding-top: 40px;
+          }
+          .card p {
             padding-left: 100px;
             padding-right: 100px;
             text-align: justify;
           }
 
-          .dialogosaudiovisuais img:hover {
+          .card img:hover {
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
           }
@@ -65,9 +67,9 @@
           }
 
           .img {
-            width: 300px;
-            border: solid 5px gray;
-            height: 297px;
+            width: 200px;
+            height: 195px;
+            padding-top: 30px;
           }
     
           
@@ -75,7 +77,27 @@
             padding-bottom: 40px;
           }
 
+          
+          footer p {
+            text-align: center;
+          }
 
+        input {
+          height: 50px;
+        }
+
+       textarea {
+        height: 140px;
+       }
+         
+          .button {
+            height: 50px;
+            width: 100%;
+            border-radius: 10px;
+          }
+          .container-button {
+            padding-top: 10px;
+          }
         @media screen and (min-width: 100px) and (max-width: 1028px) {
 
           
