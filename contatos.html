@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -48,61 +49,18 @@
             
             </header>
             
-            <div class="redesocias">
-                <a href="/" target="_blank" rel="noopener noreferrer"><img
-                        src="https://cdn-icons-png.flaticon.com/128/4923/4923005.png" alt="Logo do instagram"></a>
-                <a href="/" target="_blank" rel="noopener noreferrer"><img
-                        src="https://cdn-icons-png.flaticon.com/128/3128/3128304.png" alt="Logo do Facebook"></a>
-                <a href="/" target="_blank" rel="noopener noreferrer"><img
-                        src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="Logo do twitter"></a>
-                <a href="/" target="_blank" rel="noopener noreferrer"><img
-                        src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="Logo do YouTube"></a>
-                <a href="/" target="_blank" rel="noopener noreferrer"><img
-                        src="https://cdn-icons-png.flaticon.com/128/3670/3670247.png" alt="Logo do vimeo"></a>
-            
-            </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-
-
         <section class="contatos">
-            <div class="container mt-5">
-                <form action="https://formsubmit.co/jose.vanderlei.nn@gmail.com" method="POST" class="needs-validation" id="form" novalidate>
-                    <div class="form-group">
-                    <input type="hidden" name="_next" value="https://eparreifilmes.github.io/eparrei-fillmes//sucesso.html" class="name">
-
-
-                        <input type="hidden" name="_cc" value="josevanderlei03452@gmail.com">
-                        <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato e logo responderemos!">
-                        <input type="hidden" name="_captcha" value="false">
-                        <label for="nome">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-                        
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Infome seu email" >
-                        
-                    </div>
-                    <div class="form-group">
-                        <label for="assunto">Assunto</label>
-                        <input type="text" class="form-control" id="assunto"
-                            placeholder="Diga sobre qual assunto deseja tratar?">
-                       
-                    </div>
-                    <div class="form-group">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
-                       
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-        
-            </div>
+            <form action="" id="form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" class="nome">
+                <label for="subjet">Assunto</label>
+                <input type="text" id="subjet" class="subjet">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="email">
+                <label for="messege">Mensegem</label>
+                <textarea name="messege" id="messege" cols="30" rows="10"></textarea>
+                <button type="submit" class="text-center" id="submit">Enviar</button>
+            </form>
         </section>
 
         <footer class="footer fixed-bottom bg-light text-center">
@@ -126,6 +84,12 @@
             </div>
            
         </footer>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
 </body>
 </html>

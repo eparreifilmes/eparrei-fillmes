@@ -57,12 +57,54 @@
               height: 100%;
           }
 
+          /*Form*/
 
-          .contatos .redesocias {
-            padding-bottom: 40px;
+          .contatos {
+            padding: 20px;
+            border-radius: 5px;
+
+          }
+          
+          form {
+            background-color: #f7f7f7;
+            max-width: 500px;
+            margin: 0 auto;
+          }
+          
+          label {
+            font-size: 14px;
+            font-weight: bold;
+          }
+          
+          input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          
+          .nome, .subjet, .email, .messege {
+            margin-bottom: 10px;
+          }
+          
+          .subjet {
+            text-transform: uppercase;
+          }
+          
+          textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
           }
 
-
+          #submit {
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+          }
+          
         @media screen and (min-width: 100px) and (max-width: 1028px) {
 
           
