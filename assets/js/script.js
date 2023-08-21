@@ -12,7 +12,7 @@ form.addEventListener("submit", function(event) {
     alert("Por favor, preencha todos os campos obrigatórios.");
   }
 
-  // Check if email is valid
+  // Check if email is validddd
   if (!validateEmail(email)) {
     event.preventDefault();
     alert("O e-mail inserido é inválido.");
