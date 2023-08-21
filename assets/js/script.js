@@ -1,44 +1,31 @@
-const form = document.querySelector('#form');
-const nome = document.querySelector('#nome');
-const inputEmail = document.querySelector('#email');
-const assunto = document.querySelector('#assunto');
-const mensagem = document.querySelector('#mensagem');
+const form = document.getElementById("form");
 
-form.addEventListener("submit", (event => {
+form.addEventListener("submit", function(event) {
+  // Check if all required fields are filled out
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("mensagem").value;
+
+  if (name == "" || email == "" || subject == "" || message == "") {
     event.preventDefault();
+    alert("Por favor, preencha todos os campos obrigatórios.");
+  }
 
-    if(nome.value === ''){
-    alert('Informe seu nome!');
-    return;
-}
+  // Check if email is valid
+  if (!validateEmail(email)) {
+    event.preventDefault();
+    alert("O e-mail inserido é inválido.");
+  }
 
-if(inputEmail.value === '' || !isEmailValid(inputEmail.value)){
-    alert('Informe seu email! ');
-    alert('EX: fulano@dominio.com');
-    return;
-}
+  // Check if message is too long
+  if (message.length > 1000) {
+    event.preventDefault();
+    alert("A mensagem é muito longa.");
+  }
+});
 
-if(assunto.value === ''){
-    alert('Informe sobre qual assunto deseja tratar');
-}
-
-if(mensagem.value === ''){
-    alert('Escreva sua mensagem para proseguir com o contato');
-}
-
-form.submit();
-}));
-
-const isEmailValid = (email) => {
-    
-    const emailRegex = new RegExp(
-        //usuario12@host.com.br
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}/
-    )
-
-    if(emailRegex.test(email)) {
-        return true;
-    }
-
-    return false;
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
 }
